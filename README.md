@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AL-HAYAT by Dr. Farheen
 
-## Getting Started
+Premium ecommerce foundation built with Next.js 15, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, and Lucide React.
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`app/` keeps the App Router entry points and route-level layout files.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`components/ui/` is reserved for reusable UI primitives and shadcn/ui components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`components/layout/` holds structural building blocks like header, footer, and shell composition.
 
-## Learn More
+`components/common/` is for shared cross-feature components.
 
-To learn more about Next.js, take a look at the following resources:
+`components/home/` is reserved for home-page-specific components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`components/shop/` is reserved for catalog, collection, and product-related components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`lib/` is for reusable utilities, helpers, and framework-agnostic logic.
 
-## Deploy on Vercel
+`hooks/` stores reusable React hooks.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`services/` is for future data access, API clients, and Supabase integration.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`types/` contains shared TypeScript types and interfaces.
+
+`constants/` stores application-wide constants and configuration values.
+
+`public/images/` is for general static images.
+
+`public/products/` is for product imagery and merchandising assets.
+
+`public/icons/` is for static icon assets.
+
+## Notes
+
+The root page is intentionally non-visual for now. No page UI has been built yet; this setup only initializes the project foundation and folder architecture.
